@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmos Research — Fractional CPO & UX Research Strategy | Andréa Stella</title>
+  <meta name="description" content="Cosmos Research helps product teams solve legacy product problems through data-driven UX research. Fractional CPO Andréa Stella brings Fortune 500 experience from Sony, Henry Schein ONE, and CUNY to reduce churn and save millions.">
+  <meta name="keywords" content="fractional chief product officer, fractional CPO, UX research strategist, legacy product optimization, product research consultant, reduce churn, user experience research, product strategy">
+  <meta property="og:title" content="Cosmos Research — Fractional CPO & UX Research Strategy">
+  <meta property="og:description" content="I help product teams find the answers already hiding in their data. Fortune 500 research leadership, fractional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cosmosresearch.io">
+  <link rel="canonical" href="https://cosmosresearch.io">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cosmos Research",
+    "description": "Fractional Chief Product Officer and UX Research Strategy for legacy product teams.",
+    "url": "https://cosmosresearch.io",
+    "founder": {
+      "@type": "Person",
+      "name": "Andréa Stella",
+      "jobTitle": "Fractional Chief Product Officer",
+      "alumniOf": "The Graduate Center, CUNY",
+      "knowsAbout": ["UX Research", "Product Strategy", "Data Interpretation", "User Experience"]
+    },
+    "serviceType": ["Fractional CPO", "UX Research Strategy", "Product Advisory"],
+    "areaServed": "US"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #a8b8cc;
+      --accent-soft: rgba(168,184,204,0.14);
+      --accent-glow: rgba(168,184,204,0.25);
+      --accent-hover: #bcc8d8;
+      --accent-text: #c2d0e0;
+
+      --night: #0c1024;
+      --glass: rgba(8, 14, 36, 0.58);
+      --glass-strong: rgba(8, 14, 36, 0.75);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --glass-border-light: rgba(255, 255, 255, 0.06);
+      --white: #eeeae3;
+      --dim: #a8a4b6;
+      --mist: rgba(238, 234, 227, 0.72);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      color: var(--white);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      background: var(--night) url('assets/bg-cosmos.png') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(180deg,
+        rgba(6,10,30,0.50) 0%,
+        rgba(6,10,30,0.34) 35%,
+        rgba(6,10,30,0.22) 65%,
+        rgba(6,10,30,0.44) 100%
+      );
+      z-index: 0;
+      pointer-events: none;
+    }
+    .page-content { position: relative; z-index: 1; }
+
+    /* ── SHARED ── */
+    .section-inner { max-width: 1080px; margin: 0 auto; }
+    .tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .btn {
+      display: inline-block;
+      padding: 11px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+    .btn-accent { background: var(--accent); color: var(--night); }
+    .btn-accent:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px var(--accent-glow);
+    }
+    .btn-outline {
+      color: var(--white);
+      border: 1px solid var(--glass-border);
+      background: transparent;
+    }
+    .btn-outline:hover { border-color: var(--dim); background: var(--glass); }
+    .btn-ghost {
+      color: var(--accent-text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 11px 14px;
+      transition: color 0.25s;
+    }
+    .btn-ghost:hover { color: var(--white); }
+    .glass-card {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      backdrop-filter: blur(20px) saturate(1.2);
+      -webkit-backdrop-filter: blur(20px) saturate(1.2);
+      transition: all 0.35s;
+    }
+    .glass-card:hover {
+      background: var(--glass-strong);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    }
+    .glass-band {
+      background: var(--glass);
+      backdrop-filter: blur(20px) saturate(1.2);
+      -webkit-backdrop-filter: blur(20px) saturate(1.2);
+      border-top: 1px solid var(--glass-border-light);
+      border-bottom: 1px solid var(--glass-border-light);
+    }
+
+    /* ── ① OPT-IN ── */
+    .opt-in {
+      padding: 10px 48px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--dim);
+      background: rgba(6,10,30,0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--glass-border-light);
+    }
+    .opt-in a {
+      color: var(--accent-text);
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .opt-in a:hover { text-decoration: underline; }
+
+    /* ── ② NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 48px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(6,10,30,0.55);
+      backdrop-filter: blur(28px) saturate(1.4);
+      -webkit-backdrop-filter: blur(28px) saturate(1.4);
+      border-bottom: 1px solid var(--glass-border-light);
+    }
+    .nav-logo {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 21px;
+      font-weight: 500;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo em { color: var(--accent); font-style: normal; }
+    nav ul { list-style: none; display: flex; gap: 24px; align-items: center; }
+    nav ul a { color: var(--dim); text-decoration: none; font-size: 13px; transition: color 0.25s; }
+    nav ul a:hover { color: var(--white); }
+    nav .btn { font-size: 13px; padding: 9px 20px; }
+
+    /* ── ③ HERO ── */
+    .hero { padding: 80px 48px 64px; text-align: center; }
+    .hero .section-inner { max-width: 760px; }
+    .hero-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-text);
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin-bottom: 20px;
+      font-weight: 400;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .hero h1 em { font-style: italic; color: var(--accent-text); font-weight: 300; }
+    .hero-sub {
+      font-size: 17px;
+      color: var(--mist);
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-btns { display: flex; gap: 10px; justify-content: center; align-items: center; }
+
+    /* ── ④ LOGOS ── */
+    .logos-section { padding: 36px 48px; }
+    .logos-section p {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .logos-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .logo-item {
+      height: 30px;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: center;
+    }
+    .logo-item:hover { opacity: 0.8; }
+    .logo-item img {
+      height: 30px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+    .logo-item.logo-cms img { height: 24px; }
+    .logo-item.logo-pm img { height: 34px; }
+
+    /* ── ⑤ NUMBERS ── */
+    .numbers { padding: 40px 48px; }
+    .numbers-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .num-val {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--accent-text);
+      line-height: 1;
+      margin-bottom: 5px;
+      text-shadow: 0 2px 12px var(--accent-glow);
+    }
+    .num-label { font-size: 12px; color: var(--mist); line-height: 1.4; }
+
+    /* ── ⑥ PROBLEM / SOLUTION ── */
+    .problem { padding: 64px 48px; }
+    .problem .section-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .prob-card { padding: 36px 30px; }
+    .prob-card h3 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .prob-card.pain h3 { color: var(--dim); }
+    .prob-card.gain h3 { color: var(--accent-text); }
+    .prob-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .prob-card li {
+      font-size: 14.5px;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.6;
+    }
+    .prob-card.pain li { color: var(--dim); }
+    .prob-card.pain li::before { content: '—'; position: absolute; left: 0; color: rgba(255,255,255,0.2); }
+    .prob-card.gain li { color: var(--white); }
+    .prob-card.gain li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 500; }
+
+    /* ── ⑦ TESTIMONIALS ── */
+    .testi { padding: 64px 48px; }
+    .testi-header { text-align: center; margin-bottom: 8px; }
+    .testi-header h2 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 28px;
+      font-weight: 400;
+    }
+    .testi-sub {
+      text-align: center;
+      font-size: 15px;
+      color: var(--dim);
+      margin-bottom: 32px;
+    }
+    .testi-cards {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .t-card {
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .t-card blockquote {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 15px;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--mist);
+      margin-bottom: 22px;
+      font-weight: 300;
+    }
+    .t-card cite { font-style: normal; font-weight: 500; font-size: 13px; color: var(--white); }
+    .t-card cite span { display: block; font-size: 12px; color: var(--dim); font-weight: 400; margin-top: 2px; }
+
+    /* ── ⑧ SERVICES ── */
+    .services { padding: 64px 48px; }
+    .services-header { text-align: center; margin-bottom: 32px; }
+    .services-header h2 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 28px;
+      font-weight: 400;
+    }
+    .services-header h2 em { color: var(--accent-text); font-style: italic; font-weight: 300; }
+    .services-row {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .s-card { padding: 32px 26px; }
+    .s-card h3 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .s-card p { font-size: 14px; color: var(--mist); line-height: 1.7; margin-bottom: 14px; }
+    .s-card .detail { font-size: 12px; color: var(--accent-text); font-weight: 500; }
+
+    /* ── ⑨ ABOUT ── */
+    .about { padding: 64px 48px; }
+    .about-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.7fr 1.5fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dim);
+      font-size: 13px;
+      font-style: italic;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .about-text h2 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+    .about-text .subtitle {
+      font-size: 14px;
+      color: var(--accent-text);
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .about-text p {
+      color: var(--mist);
+      line-height: 1.75;
+      margin-bottom: 14px;
+      font-size: 14.5px;
+    }
+    .about-text p strong { color: var(--white); font-weight: 500; }
+
+    /* ── ⑩ FAQ ── */
+    .faq { padding: 64px 48px; }
+    .faq-inner { max-width: 720px; margin: 0 auto; }
+    .faq-header { text-align: center; margin-bottom: 32px; }
+    .faq-header h2 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 28px;
+      font-weight: 400;
+    }
+    .faq-item { border-top: 1px solid var(--glass-border-light); padding: 20px 0; }
+    .faq-item:last-child { border-bottom: 1px solid var(--glass-border-light); }
+    .faq-q {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-q::after {
+      content: '+';
+      font-size: 20px;
+      color: var(--accent);
+      font-weight: 300;
+      flex-shrink: 0;
+      margin-left: 16px;
+      transition: transform 0.3s;
+    }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a {
+      font-size: 14px;
+      color: var(--mist);
+      line-height: 1.7;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding-top: 0;
+    }
+    .faq-item.open .faq-a { max-height: 200px; padding-top: 10px; }
+
+    /* ── ⑪ CONTACT ── */
+    .contact { padding: 64px 48px; text-align: center; }
+    .contact .section-inner { max-width: 640px; }
+    .contact h2 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: clamp(26px, 2.8vw, 34px);
+      font-weight: 400;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .contact h2 em { color: var(--accent-text); font-style: italic; font-weight: 300; }
+    .contact > .section-inner > p {
+      font-size: 15px;
+      color: var(--mist);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .contact-btns {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ── ⑫ FOOTER ── */
+    footer {
+      padding: 32px 48px;
+      border-top: 1px solid var(--glass-border-light);
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--dim);
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── ASSESSMENT MODAL ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(6,10,30,0.8);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 500;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal {
+      background: #141832;
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      max-width: 560px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 40px 36px;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: var(--dim);
+      font-size: 24px;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+    .modal-close:hover { color: var(--white); }
+    .modal h3 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .modal .modal-intro {
+      font-size: 13px;
+      color: var(--dim);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+    .assess-item {
+      margin-bottom: 24px;
+    }
+    .assess-item label {
+      display: block;
+      font-size: 14px;
+      color: var(--white);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .assess-item label strong {
+      color: var(--accent-text);
+    }
+    .score-btns {
+      display: flex;
+      gap: 8px;
+    }
+    .score-btn {
+      width: 44px;
+      height: 38px;
+      border: 1px solid var(--glass-border);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--dim);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .score-btn:hover { border-color: var(--accent); color: var(--white); }
+    .score-btn.selected {
+      background: var(--accent);
+      color: var(--night);
+      border-color: var(--accent);
+    }
+    .assess-result {
+      display: none;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--glass-border-light);
+    }
+    .assess-result.visible { display: block; }
+    .assess-total {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 36px;
+      font-weight: 300;
+      color: var(--accent-text);
+      margin-bottom: 4px;
+    }
+    .assess-total span { font-size: 18px; color: var(--dim); }
+    .assess-verdict {
+      font-size: 15px;
+      color: var(--white);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .assess-advice {
+      font-size: 13px;
+      color: var(--mist);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .assess-steps {
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.7;
+    }
+    .assess-steps strong { color: var(--accent-text); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .opt-in { padding: 10px 24px; }
+      nav { padding: 16px 24px; }
+      .hero { padding: 56px 24px 48px; }
+      .numbers { padding: 32px 24px; }
+      .numbers-inner { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .logos-section { padding: 28px 24px; }
+      .problem { padding: 48px 24px; }
+      .problem .section-inner { grid-template-columns: 1fr; }
+      .testi { padding: 48px 24px; }
+      .testi-cards { grid-template-columns: 1fr; }
+      .services { padding: 48px 24px; }
+      .services-row { grid-template-columns: 1fr; }
+      .about { padding: 48px 24px; }
+      .about-inner { grid-template-columns: 1fr; gap: 32px; }
+      .about-photo { max-width: 240px; }
+      .faq { padding: 48px 24px; }
+      .contact { padding: 48px 24px; }
+      .contact-btns { flex-direction: column; }
+      footer { flex-direction: column; gap: 10px; text-align: center; padding: 28px 24px; }
+      .modal { padding: 32px 24px; }
+    }
+    @media (max-width: 600px) {
+      nav ul a:not(.btn) { display: none; }
+      .numbers-inner { grid-template-columns: 1fr; }
+      .logos-row { gap: 24px; }
+      .hero-btns { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-content">
+
+    <!-- ① OPT-IN BAR -->
+    <div class="opt-in">
+      <a href="#" onclick="document.getElementById('assessModal').classList.add('active'); return false;">Take the assessment: 5 signs your legacy product needs a reset →</a>
+    </div>
+
+    <!-- ② NAV -->
+    <nav>
+      <a href="/" class="nav-logo">Cosmos Research</a>
+      <ul>
+        <li><a href="#problem">The Problem</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Results</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#connect" class="btn btn-accent">Book a Strategy Call</a></li>
+      </ul>
+    </nav>
+
+    <!-- ③ HERO -->
+    <header class="hero">
+      <div class="section-inner">
+        <p class="hero-label">Fractional Chief Product Officer</p>
+        <h1>Let's find what's true and build <em>what&nbsp;matters.</em></h1>
+        <p class="hero-sub">I navigate legacy products and create functional systems that reduce churn, cut development waste, and align your team around the right priorities — in 12&nbsp;weeks or&nbsp;less.</p>
+        <div class="hero-btns">
+          <a href="#connect" class="btn btn-accent">Book a Strategy Call</a>
+          <a href="#problem" class="btn-ghost">See how it works ↓</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ④ LOGO RIBBON -->
+    <section class="logos-section glass-band">
+      <p>Research leadership trusted by</p>
+      <div class="logos-row">
+        <div class="logo-item"><img src="assets/sony-music.svg" alt="Sony Music" height="30"></div>
+        <div class="logo-item"><img src="assets/henry-schein-one.svg" alt="Henry Schein ONE" height="30"></div>
+        <div class="logo-item"><img src="assets/the-orchard.svg" alt="The Orchard" height="30"></div>
+        <div class="logo-item logo-cms"><img src="assets/cms-gov.svg" alt="CMS.gov" height="24"></div>
+        <div class="logo-item"><img src="assets/ccny.svg" alt="CUNY" height="30"></div>
+        <div class="logo-item"><img src="assets/graduate-center.svg" alt="CUNY Graduate Center" height="30"></div>
+        <div class="logo-item logo-pm"><img src="assets/partnermatch.svg" alt="PartnerMatch" height="34"></div>
+      </div>
+    </section>
+
+    <!-- ⑤ NUMBERS -->
+    <section class="numbers">
+      <div class="numbers-inner">
+        <div>
+          <div class="num-val">$2M+</div>
+          <div class="num-label">development costs saved</div>
+        </div>
+        <div>
+          <div class="num-val">600K+</div>
+          <div class="num-label">data points analyzed</div>
+        </div>
+        <div>
+          <div class="num-val">52</div>
+          <div class="num-label">products supported</div>
+        </div>
+        <div>
+          <div class="num-val">80+</div>
+          <div class="num-label">PMs &amp; designers mentored</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑥ PROBLEM → SOLUTION -->
+    <section class="problem" id="problem">
+      <div class="section-inner">
+        <div class="glass-card prob-card pain">
+          <h3>What you're experiencing</h3>
+          <ul>
+            <li>Your roadmap is held hostage by legacy architecture, dependencies, and inherited decisions</li>
+            <li>Revenue-driving improvements keep getting delayed because your team is spending so much time on maintenance and support work</li>
+            <li>Product decisions are shaped by the loudest stakeholder, not by what will move adoption and retention</li>
+            <li>Customers are leaving and expansion is stalling because issues show up across too many systems to spot patterns and fix what drives churn</li>
+          </ul>
+        </div>
+        <div class="glass-card prob-card gain">
+          <h3>What you'll walk away with after 12 weeks</h3>
+          <ul>
+            <li>A clear, prioritized roadmap for the next quarter that your team can actually execute</li>
+            <li>A short list of the highest-impact problems to solve first, with success metrics so you know if it worked</li>
+            <li>A realistic delivery plan that accounts for constraints like tech debt, dependencies, and team capacity</li>
+            <li>A single plan your stakeholders agree on, so decisions stop bouncing around</li>
+            <li>A repeatable way to make product decisions (templates, rituals, and an operating cadence) so progress keeps going after we're done</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑦ TESTIMONIALS -->
+    <section class="testi" id="testimonials">
+      <div class="testi-header">
+        <span class="tag">Kind Words</span>
+        <h2>Here's what clients and collaborators have shared.</h2>
+      </div>
+      <div class="testi-cards">
+        <article class="glass-card t-card">
+          <blockquote>"We were about to spend six figures building features nobody needed. Andréa showed us the answers were already in our support data — and saved us the entire budget."</blockquote>
+          <cite>VP of Product<span>Enterprise Healthcare SaaS</span></cite>
+        </article>
+        <article class="glass-card t-card">
+          <blockquote>"Andréa doesn't just do research — she teaches your team how to think strategically. Our PMs are still using her frameworks a year later."</blockquote>
+          <cite>Head of Design<span>B2B Music Technology</span></cite>
+        </article>
+        <article class="glass-card t-card">
+          <blockquote>"She walks into a room of conflicting priorities and leaves everyone aligned. She listens before she leads — that's why people trust&nbsp;her."</blockquote>
+          <cite>Director of Engineering<span>Government Technology Platform</span></cite>
+        </article>
+      </div>
+    </section>
+
+    <!-- ⑧ SERVICES -->
+    <section class="services" id="services">
+      <div class="services-header">
+        <span class="tag">Work With Me</span>
+        <h2>Three ways to <em>explore what's possible.</em></h2>
+      </div>
+      <div class="services-row">
+        <article class="glass-card s-card">
+          <h3>Embedded Partner</h3>
+          <p>Ongoing fractional product leadership and strategy. I embed with your team to bring clarity to priorities, strengthen decision-making, and support delivery week to week.</p>
+          <span class="detail">Ongoing · ~10 hrs/week</span>
+        </article>
+        <article class="glass-card s-card">
+          <h3>Legacy Product Reset</h3>
+          <p>A 12-week deep dive that untangles legacy product issues, builds modernized systems your team has been missing, and teaches everyone how to use them to realign with revenue.</p>
+          <span class="detail">12 weeks · Fixed scope</span>
+        </article>
+        <article class="glass-card s-card">
+          <h3>Strategic Advisory</h3>
+          <p>Advisory calls and async support to gut-check decisions, shape operations, and keep product aligned with mission.</p>
+          <span class="detail">Flexible · Calls + async</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ⑨ ABOUT -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-photo">[Andréa's photo]</div>
+        <div class="about-text">
+          <span class="tag">About</span>
+          <h2>Andréa Stella</h2>
+          <p class="subtitle">Fractional CPO</p>
+          <p>I'm a research-led product strategist. For over a decade I've worked with teams that are stuck in legacy complexity and competing priorities, to help them turn what customers are already saying (support data, usage patterns, stakeholder signals) into a clear plan: what to fix first, what to build next, how to prove it's working.</p>
+          <p>And as a PhD candidate at the CUNY Graduate Center, I know how to bring academic-level rigor to my clients, without the ego. Added bonus is: I believe in magic.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑩ FAQ -->
+    <section class="faq" id="faq">
+      <div class="faq-inner">
+        <div class="faq-header">
+          <span class="tag">FAQ</span>
+          <h2>Common questions</h2>
+        </div>
+
+        <div class="faq-item open">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What does "fractional" mean in practice?</div>
+          <div class="faq-a">I am embedded with your team for ~10 hours per week — giving you senior product leadership without the cost of a full-time executive hire. I help drive real decisions, while being flexible enough to scale with your needs.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How quickly can we start seeing results?</div>
+          <div class="faq-a">Most teams will have actionable insights within the first 4–6 weeks. By week 12, you'll have a research-backed roadmap, trained team members, and measurably better product decisions.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need a product team already in place?</div>
+          <div class="faq-a">Not necessarily. I've worked with solo founders, small teams, and large cross-functional organizations. The engagement model adapts to where you are and where you need to go.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What makes your approach different from a traditional UX consultant?</div>
+          <div class="faq-a">My super power is working with your existing data — support tickets, analytics, customer feedback — before recommending any new research. This means faster insights, lower costs, and solutions grounded in what your users are already telling you.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What does a strategy call look like?</div>
+          <div class="faq-a">It's a free 30-minute conversation. No pitch, no deck. We'll talk about your product, your team, your challenges, and whether working together makes sense. You'll leave with at least one actionable insight regardless.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑪ CONTACT -->
+    <section class="contact" id="connect">
+      <div class="section-inner">
+        <span class="tag">Start Here</span>
+        <h2>Every great discovery begins with a <em>single conversation.</em></h2>
+        <p>30-minute strategy call. No pitch, no pressure — just a clear conversation about your product and what horizons are worth exploring.</p>
+        <div class="contact-btns">
+          <a href="#" class="btn btn-accent">Book a Strategy Call</a>
+          <a href="https://www.linkedin.com/in/andreamstella/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <!-- 
+          CALENDLY EMBED: Replace this comment block with your Calendly inline widget:
+          <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-LINK/strategy-call" style="min-width:320px;height:630px;margin-top:32px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        -->
+      </div>
+    </section>
+
+    <!-- ⑫ FOOTER -->
+    <footer>
+      <span>&copy; 2026 Cosmos Research</span>
+      <span><a href="mailto:andrea@cosmosresearch.io">andrea@cosmosresearch.io</a></span>
+      <span><a href="https://www.linkedin.com/in/andreamstella/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </footer>
+
+  </div>
+
+  <!-- ASSESSMENT MODAL -->
+  <div class="modal-overlay" id="assessModal">
+    <div class="modal">
+      <button class="modal-close" onclick="document.getElementById('assessModal').classList.remove('active')">&times;</button>
+      <h3>Legacy Product Reset Assessment</h3>
+      <p class="modal-intro">For each sign, choose a score from 0–3.<br>0 = Not true · 1 = Sometimes true · 2 = Often true · 3 = Consistently true</p>
+
+      <div class="assess-item" data-q="1">
+        <label><strong>1. Roadmap drag:</strong> Dependencies, legacy architecture, or inherited decisions regularly block delivery.</label>
+        <div class="score-btns">
+          <button class="score-btn" data-val="0">0</button>
+          <button class="score-btn" data-val="1">1</button>
+          <button class="score-btn" data-val="2">2</button>
+          <button class="score-btn" data-val="3">3</button>
+        </div>
+      </div>
+
+      <div class="assess-item" data-q="2">
+        <label><strong>2. Maintenance overload:</strong> Maintenance and support work consistently crowds out revenue-driving improvements.</label>
+        <div class="score-btns">
+          <button class="score-btn" data-val="0">0</button>
+          <button class="score-btn" data-val="1">1</button>
+          <button class="score-btn" data-val="2">2</button>
+          <button class="score-btn" data-val="3">3</button>
+        </div>
+      </div>
+
+      <div class="assess-item" data-q="3">
+        <label><strong>3. Stakeholder-driven decisions:</strong> The loudest stakeholder outweighs customer evidence in prioritization.</label>
+        <div class="score-btns">
+          <button class="score-btn" data-val="0">0</button>
+          <button class="score-btn" data-val="1">1</button>
+          <button class="score-btn" data-val="2">2</button>
+          <button class="score-btn" data-val="3">3</button>
+        </div>
+      </div>
+
+      <div class="assess-item" data-q="4">
+        <label><strong>4. Missing churn pattern:</strong> Issues show up across too many systems to spot patterns and fix root causes.</label>
+        <div class="score-btns">
+          <button class="score-btn" data-val="0">0</button>
+          <button class="score-btn" data-val="1">1</button>
+          <button class="score-btn" data-val="2">2</button>
+          <button class="score-btn" data-val="3">3</button>
+        </div>
+      </div>
+
+      <div class="assess-item" data-q="5">
+        <label><strong>5. Scattered strategy:</strong> Team lacks an agreed set of metrics, insights, and rituals to decide what to do next.</label>
+        <div class="score-btns">
+          <button class="score-btn" data-val="0">0</button>
+          <button class="score-btn" data-val="1">1</button>
+          <button class="score-btn" data-val="2">2</button>
+          <button class="score-btn" data-val="3">3</button>
+        </div>
+      </div>
+
+      <div class="assess-result" id="assessResult">
+        <div class="assess-total" id="assessTotal">0 <span>/ 15</span></div>
+        <div class="assess-verdict" id="assessVerdict"></div>
+        <div class="assess-advice" id="assessAdvice"></div>
+        <div class="assess-steps" id="assessSteps"></div>
+        <a href="#connect" class="btn btn-accent" style="margin-top: 16px;" onclick="document.getElementById('assessModal').classList.remove('active')">Book a Strategy Call</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Assessment scoring
+    const scores = {};
+    document.querySelectorAll('.score-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.closest('.assess-item');
+        const q = item.dataset.q;
+        const val = parseInt(this.dataset.val);
+        scores[q] = val;
+        item.querySelectorAll('.score-btn').forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+
+        if (Object.keys(scores).length === 5) {
+          const total = Object.values(scores).reduce((a, b) => a + b, 0);
+          const result = document.getElementById('assessResult');
+          const totalEl = document.getElementById('assessTotal');
+          const verdictEl = document.getElementById('assessVerdict');
+          const adviceEl = document.getElementById('assessAdvice');
+          const stepsEl = document.getElementById('assessSteps');
+
+          totalEl.innerHTML = total + ' <span>/ 15</span>';
+
+          if (total <= 4) {
+            verdictEl.textContent = 'Targeted tune-up';
+            adviceEl.textContent = 'Your product foundation is solid. A few targeted improvements could unlock meaningful gains.';
+          } else if (total <= 9) {
+            verdictEl.textContent = 'Focused reset in one area';
+            adviceEl.textContent = 'There are clear pressure points worth addressing. A focused engagement could create real momentum.';
+          } else {
+            verdictEl.textContent = 'Full legacy product reset is likely warranted';
+            adviceEl.textContent = 'Multiple systems are creating drag across your product. A structured 12-week reset can untangle priorities and rebuild momentum.';
+          }
+
+          if (total >= 10) {
+            stepsEl.innerHTML = '<strong>Next steps:</strong><br>1. List the top 2 areas creating drag<br>2. Pull 3 recent examples (missed deadlines, escalations, churn drivers)<br>3. Book a strategy call to map a clearer path';
+          } else {
+            stepsEl.innerHTML = '';
+          }
+
+          result.classList.add('visible');
+        }
+      });
+    });
+
+    // Close modal on overlay click
+    document.getElementById('assessModal').addEventListener('click', function(e) {
+      if (e.target === this) this.classList.remove('active');
+    });
+
+    // Close modal on Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') document.getElementById('assessModal').classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>
