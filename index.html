@@ -222,7 +222,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .hero-btns { display: flex; gap: 10px; justify-content: center; align-items: center; }
+    .hero-btns { display: flex; flex-direction: column; gap: 6px; justify-content: center; align-items: center; }
 
     /* ── ④ LOGOS ── */
     .logos-section { padding: 36px 48px; }
@@ -309,7 +309,7 @@
       position: relative;
       line-height: 1.6;
     }
-    .prob-card.pain li { color: var(--dim); }
+    .prob-card.pain li { color: var(--white); }
     .prob-card.pain li::before { content: '—'; position: absolute; left: 0; color: rgba(255,255,255,0.2); }
     .prob-card.gain li { color: var(--white); }
     .prob-card.gain li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 500; }
@@ -342,9 +342,9 @@
       justify-content: space-between;
     }
     .t-card blockquote {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: 'IBM Plex Sans', sans-serif;
       font-size: 15px;
-      font-style: italic;
+      font-style: normal;
       line-height: 1.6;
       color: var(--mist);
       margin-bottom: 22px;
@@ -755,7 +755,6 @@
     <!-- ⑦ TESTIMONIALS -->
     <section class="testi" id="testimonials">
       <div class="testi-header">
-        <span class="tag">Kind Words</span>
         <h2>Here's what clients and collaborators have shared.</h2>
       </div>
       <div class="testi-cards">
@@ -777,7 +776,6 @@
     <!-- ⑧ SERVICES -->
     <section class="services" id="services">
       <div class="services-header">
-        <span class="tag">Work With Me</span>
         <h2>Three ways to <em>explore what's possible.</em></h2>
       </div>
       <div class="services-row">
@@ -804,7 +802,6 @@
       <div class="about-inner">
         <div class="about-photo">[Andréa's photo]</div>
         <div class="about-text">
-          <span class="tag">About</span>
           <h2>Andréa Stella</h2>
           <p class="subtitle">Fractional CPO</p>
           <p>I'm a research-led product strategist. For over a decade I've worked with teams that are stuck in legacy complexity and competing priorities, to help them turn what customers are already saying (support data, usage patterns, stakeholder signals) into a clear plan: what to fix first, what to build next, how to prove it's working.</p>
@@ -817,7 +814,6 @@
     <section class="faq" id="faq">
       <div class="faq-inner">
         <div class="faq-header">
-          <span class="tag">FAQ</span>
           <h2>Common questions</h2>
         </div>
 
@@ -847,7 +843,6 @@
     <!-- ⑪ CONTACT -->
     <section class="contact" id="connect">
       <div class="section-inner">
-        <span class="tag">Start Here</span>
         <h2>Every great discovery begins with a <em>single conversation.</em></h2>
         <p>30-minute strategy call. No pitch, no pressure — just a clear conversation about your product and what horizons are worth exploring.</p>
         <div class="contact-btns">
