@@ -690,7 +690,7 @@
 
     <!-- ① OPT-IN BAR -->
     <div class="opt-in">
-      <a href="#" onclick="document.getElementById('assessModal').classList.add('active'); return false;">Take the assessment: 5 signs your legacy product needs a reset →</a>
+      <a href="#" onclick="document.getElementById('assessModal').classList.add('active'); return false;">Take the Assessment: Could you benefit from the 12-Week Constellation Build? →</a>
     </div>
 
     <!-- ② NAV -->
@@ -908,11 +908,11 @@
   <div class="modal-overlay" id="assessModal">
     <div class="modal">
       <button class="modal-close" onclick="document.getElementById('assessModal').classList.remove('active')">&times;</button>
-      <h3>Legacy Product Reset Assessment</h3>
-      <p class="modal-intro">For each sign, choose a score from 0–3.<br>0 = Not true · 1 = Sometimes true · 2 = Often true · 3 = Consistently true</p>
+      <h3>12-Week Constellation Build Assessment</h3>
+      <p class="modal-intro">For each statement, choose a score from 0–3.<br>0 = Not true · 1 = Sometimes true · 2 = Often true · 3 = Consistently true</p>
 
       <div class="assess-item" data-q="1">
-        <label><strong>1. Roadmap drag:</strong> Dependencies, legacy architecture, or inherited decisions regularly block delivery.</label>
+        <label><strong>1. You can't easily show what's working or why it matters.</strong> Your systems measure activity but don't reveal patterns, so proving ROI feels like guesswork.</label>
         <div class="score-btns">
           <button class="score-btn" data-val="0">0</button>
           <button class="score-btn" data-val="1">1</button>
@@ -922,7 +922,7 @@
       </div>
 
       <div class="assess-item" data-q="2">
-        <label><strong>2. Maintenance overload:</strong> Maintenance and support work consistently crowds out revenue-driving improvements.</label>
+        <label><strong>2. Every decision feels reactive instead of strategic.</strong> ou're responding to the loudest pressure (leadership, customers, fires) instead of building from a clear plan.</label>
         <div class="score-btns">
           <button class="score-btn" data-val="0">0</button>
           <button class="score-btn" data-val="1">1</button>
@@ -932,7 +932,7 @@
       </div>
 
       <div class="assess-item" data-q="3">
-        <label><strong>3. Stakeholder-driven decisions:</strong> The loudest stakeholder outweighs customer evidence in prioritization.</label>
+        <label><strong>3. You're being asked to defend decisions you weren't confident about.</strong> Leadership pushes priorities that don't feel grounded, and now you're stuck proving they worked.</label>
         <div class="score-btns">
           <button class="score-btn" data-val="0">0</button>
           <button class="score-btn" data-val="1">1</button>
@@ -942,7 +942,7 @@
       </div>
 
       <div class="assess-item" data-q="4">
-        <label><strong>4. Missing churn pattern:</strong> Issues show up across too many systems to spot patterns and fix root causes.</label>
+        <label><strong>4. Your existing frameworks and ceremonies aren't helping you make better decisions.</strong> You have processes in place, but they're not surfacing what actually matters.</label>
         <div class="score-btns">
           <button class="score-btn" data-val="0">0</button>
           <button class="score-btn" data-val="1">1</button>
@@ -952,7 +952,7 @@
       </div>
 
       <div class="assess-item" data-q="5">
-        <label><strong>5. Scattered strategy:</strong> Team lacks an agreed set of metrics, insights, and rituals to decide what to do next.</label>
+        <label><strong>5. You can't map the patterns driving your biggest issues.</strong> Problems feel scattered across too many systems to see what's really broken.</label>
         <div class="score-btns">
           <button class="score-btn" data-val="0">0</button>
           <button class="score-btn" data-val="1">1</button>
@@ -993,19 +993,19 @@
 
           totalEl.innerHTML = total + ' <span>/ 15</span>';
 
-          if (total <= 4) {
-            verdictEl.textContent = 'Targeted tune-up';
-            adviceEl.textContent = 'Your product foundation is solid. A few targeted improvements could unlock meaningful gains.';
-          } else if (total <= 9) {
-            verdictEl.textContent = 'Focused reset in one area';
-            adviceEl.textContent = 'There are clear pressure points worth addressing. A focused engagement could create real momentum.';
+          if (total <= 5) {
+            verdictEl.textContent = '<strong>Your systems are mostly calibrated</strong>';
+            adviceEl.textContent = 'Your foundation is solid. You&rsquo;re able to see most of the patterns in your product and make decisions with confidence. A few targeted improvements or ongoing calibration support could strengthen what&rsquo;s already working.<br><strong>Next steps:</strong><br>1. Spot the 1–2 areas that still feel unclear<br>2. Consider whether Stay Calibrated (ongoing support) could help you maintain momentum<br>3.Book a call if you want to explore what&rsquo;s possible';
+          } else if (total <= 11) {
+            verdictEl.textContent = '<strong>Some patterns are visible, others are obscured</strong>';
+            adviceEl.textContent = 'You&rsquo;ve got some systems working, but there are specific areas where you can&rsquo;t get to the center of what&rsquo;s broken. A focused engagement could reveal what&rsquo;s blocking you and build the infrastructure to solve it.<br><strong>Next steps:</strong><br>1. Identify the area where decisions feel most reactive<br>2. Pull examples of recent pressure points or conflicting priorities<br>3. Book a call to figure out if the 12-Week Constellation Build or lighter support makes sense';
           } else {
-            verdictEl.textContent = 'Full legacy product reset is likely warranted';
-            adviceEl.textContent = 'Multiple systems are creating drag across your product. A structured 12-week reset can untangle priorities and rebuild momentum.';
+            verdictEl.textContent = '<strong>The constellation is there, but you can&rsquo;t see it</strong>';
+            adviceEl.textContent = 'You&rsquo;re not able to solve your product problems because the systems in place were not structured to find the answer. The 12-Week Constellation Build will map the patterns driving your issues and give you a proven system to solve them.<br><strong>Next steps:</strong><br>1. Write down the 2–3 decisions you&rsquo;re least confident about right now<br>2. Note what data you wish you had to back them up<br>3. Book a 30-minute call to see if the Constellation Build is right for you';
           }
 
-          if (total >= 10) {
-            stepsEl.innerHTML = '<strong>Next steps:</strong><br>1. List the top 2 areas creating drag<br>2. Pull 3 recent examples (missed deadlines, escalations, churn drivers)<br>3. Book a call to map a clearer path';
+          if (total >= 12) {
+            stepsEl.innerHTML = '<strong>The constellation is there, but you can&rsquo;t see it</strong><br>You&rsquo;re not able to solve your product problems because the systems in place were not structured to find the answer. The 12-Week Constellation Build will map the patterns driving your issues and give you a proven system to solve them.<br><strong>Next steps:</strong><br>1. Write down the 2–3 decisions you&rsquo;re least confident about right now<br>2. Note what data you wish you had to back them up<br>3. Book a 30-minute call to see if the Constellation Build is right for you';
           } else {
             stepsEl.innerHTML = '';
           }
