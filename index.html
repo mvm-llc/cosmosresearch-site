@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cosmos Research — Product Strategy Advisor | Andréa Stella</title>
-  <meta name="description" content="Cosmos Research helps PE-backed SaaS companies make product decisions that hold up under budget pressure. Andréa Stella advises CPOs and Operating Partners on ROI-backed strategy and prioritization.">
-  <meta name="keywords" content="PE-backed SaaS product strategy, product ROI, CPO advisor, Operating Partner advisor, SaaS prioritization, product strategy consultant, customer evidence, product investment decisions">
-  <meta property="og:title" content="Cosmos Research — Product Strategy Advisor">
-  <meta property="og:description" content="Product strategy for PE-backed SaaS teams that need decisions backed by customer evidence and ROI.">
+  <meta name="description" content="When the plan isn't delivering, let's find out why. Andréa Stella investigates product, customer, and business assumptions to help leadership decide where to invest next.">
+  <meta name="keywords" content="product strategy advisor, value creation, product investigation, retention strategy, growth strategy, product investment decisions, SaaS advisory, customer evidence">
+  <meta property="og:title" content="Cosmos Research — Product Strategy Advisor | Value Creation">
+  <meta property="og:description" content="When the plan isn't delivering, let's find out why. Product strategy advisory for leadership teams facing retention, growth, or investment decisions.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cosmosresearch.io">
+  <meta property="og:image" content="https://cosmosresearch.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <link rel="canonical" href="https://cosmosresearch.io">
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -19,32 +23,28 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#0c1024">
 
-  <!-- OG Image -->
-  <meta property="og:image" content="https://cosmosresearch.io/assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Cosmos Research",
-    "description": "Product strategy advisor for PE-backed SaaS CPOs and Operating Partners at private equity firms. I help teams make defensible, ROI-backed product investment decisions.",
+    "description": "Product strategy advisor helping leadership teams investigate retention, growth, and product investment decisions. Andréa Stella examines the product, customers, and assumptions behind the plan.",
     "url": "https://cosmosresearch.io",
     "founder": {
       "@type": "Person",
       "name": "Andréa Stella",
       "jobTitle": "Product Strategy Advisor",
       "alumniOf": "The Graduate Center, CUNY",
-      "knowsAbout": ["Product ROI", "Capital Allocation", "Value Creation", "Portfolio Company Operations", "Unit Economics", "Product Cost Efficiency", "Roadmap Prioritization", "Post-Launch Measurement"]
+      "knowsAbout": ["Product Strategy", "Value Creation", "Customer Research", "Product Investigation", "Retention Strategy", "Growth Strategy", "Product Investment Decisions"]
     },
-    "serviceType": ["Product strategy advisory", "Product ROI and capital allocation", "Prioritization and roadmap systems", "Post-launch ROI evaluation"],
+    "serviceType": ["Product strategy advisory", "Product and customer investigation", "Business decision support", "Leadership advisory"],
     "areaServed": "US"
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -68,7 +68,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'IBM Plex Sans', sans-serif;
+      font-family: 'Work Sans', -apple-system, sans-serif;
       color: var(--white);
       font-size: 16px;
       line-height: 1.65;
@@ -95,6 +95,7 @@
 
     /* ── SHARED ── */
     .section-inner { max-width: 1080px; margin: 0 auto; }
+    .section-narrow { max-width: 680px; margin: 0 auto; }
     .tag {
       display: inline-block;
       background: var(--accent-soft);
@@ -105,6 +106,7 @@
       border-radius: 4px;
       margin-bottom: 14px;
       border: 1px solid rgba(255,255,255,0.05);
+      letter-spacing: 0.04em;
     }
     .btn {
       display: inline-block;
@@ -128,15 +130,6 @@
       background: transparent;
     }
     .btn-outline:hover { border-color: var(--dim); background: var(--glass); }
-    .btn-ghost {
-      color: var(--accent-text);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 14px;
-      padding: 11px 14px;
-      transition: color 0.25s;
-    }
-    .btn-ghost:hover { color: var(--white); }
     .glass-card {
       background: var(--glass);
       border: 1px solid var(--glass-border);
@@ -158,26 +151,18 @@
       border-bottom: 1px solid var(--glass-border-light);
     }
 
-    /* ── ① OPT-IN ── */
-    .opt-in {
-      padding: 10px 48px;
-      text-align: center;
-      font-size: 13px;
-      color: var(--dim);
-      background: rgba(6,10,30,0.6);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--glass-border-light);
+    /* Section label */
+    .section-label {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
     }
-    .opt-in a {
-      color: var(--accent-text);
-      text-decoration: none;
-      font-weight: 500;
-      cursor: pointer;
-    }
-    .opt-in a:hover { text-decoration: underline; }
 
-    /* ── ② NAV ── */
+    /* ── NAV ── */
     nav {
       display: flex;
       justify-content: space-between;
@@ -192,39 +177,30 @@
       border-bottom: 1px solid var(--glass-border-light);
     }
     .nav-logo {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: 'Fraunces', Georgia, serif;
       font-size: 21px;
       font-weight: 500;
       color: var(--white);
       text-decoration: none;
     }
-    .nav-logo em { color: var(--accent); font-style: normal; }
     nav ul { list-style: none; display: flex; gap: 24px; align-items: center; }
     nav ul a { color: var(--dim); text-decoration: none; font-size: 13px; transition: color 0.25s; }
     nav ul a:hover { color: var(--white); }
     nav .btn { font-size: 13px; padding: 9px 20px; }
 
-    /* ── ③ HERO ── */
+    /* ── HERO ── */
     .hero { padding: 80px 48px 64px; text-align: center; }
     .hero .section-inner { max-width: 760px; }
-    .hero-label {
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent-text);
-      margin-bottom: 18px;
-    }
     .hero h1 {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: 'Fraunces', Georgia, serif;
       font-size: clamp(34px, 4vw, 50px);
       line-height: 1.15;
       letter-spacing: -0.015em;
       margin-bottom: 20px;
       font-weight: 400;
       text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+      text-wrap: balance;
     }
-    .hero h1 em { font-style: italic; color: var(--accent-text); font-weight: 300; }
     .hero-sub {
       font-size: 17px;
       color: var(--mist);
@@ -234,9 +210,8 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .hero-btns { display: flex; flex-direction: column; gap: 6px; justify-content: center; align-items: center; }
 
-    /* ── ④ LOGOS ── */
+    /* ── LOGOS ── */
     .logos-section { padding: 36px 48px; }
     .logos-section p {
       font-size: 11px;
@@ -267,81 +242,135 @@
       filter: brightness(0) invert(1);
     }
 
-    /* ── ⑤ NUMBERS ── */
-    .numbers { padding: 40px 48px; }
-    .numbers-inner {
+    /* ── PROBLEM SECTION ── */
+    .problem-section { padding: 64px 48px; }
+    .problem-section .section-narrow { max-width: 680px; }
+    .problem-section h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      text-wrap: balance;
+    }
+    .problem-section p {
+      font-size: 16px;
+      color: var(--mist);
+      line-height: 1.75;
+    }
+    .problem-section p + p { margin-top: 16px; }
+    .problem-section strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    /* ── SITUATIONS ── */
+    .situations { padding: 48px 48px 64px; }
+    .situations-grid {
       max-width: 1080px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      text-align: center;
-    }
-    .num-val {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 42px;
-      font-weight: 300;
-      color: var(--accent-text);
-      line-height: 1;
-      margin-bottom: 5px;
-      text-shadow: 0 2px 12px var(--accent-glow);
-    }
-    .num-label { font-size: 12px; color: var(--mist); line-height: 1.4; }
-
-    /* ── ⑥ PROBLEM / SOLUTION ── */
-    .problem { padding: 64px 48px; }
-    .problem .section-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
-    .problem .services-header {
-      grid-column: 1 / -1;
-      text-align: center;
-      margin-bottom: 16px;
+    .sit-card { padding: 32px 26px; }
+    .sit-card h3 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: var(--white);
     }
-    .prob-card { padding: 36px 30px; }
-    .prob-card h3 {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+    .sit-card p {
+      font-size: 14px;
+      color: var(--mist);
+      line-height: 1.7;
+    }
+    .situations-note {
+      max-width: 1080px;
+      margin: 20px auto 0;
+      font-size: 14px;
+      color: var(--dim);
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* ── HOW I WORK ── */
+    .how-section { padding: 64px 48px; }
+    .how-section .section-narrow { max-width: 680px; }
+    .how-section h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 400;
+      line-height: 1.3;
       margin-bottom: 20px;
     }
-    .prob-card.pain h3 { color: var(--accent-text); }
-    .prob-card.gain h3 { color: var(--accent-text); }
-    .prob-card ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
+    .how-section p {
+      font-size: 15px;
+      color: var(--mist);
+      line-height: 1.75;
+      margin-bottom: 16px;
     }
-    .prob-card li {
-      font-size: 14.5px;
-      padding-left: 24px;
-      position: relative;
-      line-height: 1.6;
+    .how-section p:last-child { margin-bottom: 0; }
+    .how-questions {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--accent-text);
+      line-height: 1.7;
+      margin-bottom: 16px;
     }
-    .prob-card.pain li { color: var(--white); }
-    .prob-card.pain li::before { content: '—'; position: absolute; left: 0; color: rgba(255,255,255,0.2); }
-    .prob-card.gain li { color: var(--white); }
-    .prob-card.gain li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 500; }
 
-    /* ── ⑦ TESTIMONIALS ── */
-    .testi { padding: 64px 48px; }
-    .testi-header { text-align: center; margin-bottom: 8px; }
-    .testi-header h2 {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 28px;
+    /* ── PRICING ── */
+    .pricing { padding: 64px 48px; }
+    .pricing-header { text-align: center; margin-bottom: 32px; }
+    .pricing-header h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(24px, 3vw, 32px);
       font-weight: 400;
     }
-    .testi-sub {
-      text-align: center;
-      font-size: 15px;
-      color: var(--dim);
-      margin-bottom: 32px;
+    .pricing-grid {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
     }
+    .price-card { padding: 32px 26px; display: flex; flex-direction: column; }
+    .price-card h3 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: var(--white);
+    }
+    .price-meta {
+      font-size: 13px;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 14px;
+      font-variant-numeric: tabular-nums;
+    }
+    .price-card p {
+      font-size: 14px;
+      color: var(--mist);
+      line-height: 1.7;
+      flex: 1;
+    }
+    .pricing-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--dim);
+    }
+    .pricing-cta {
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testi { padding: 64px 48px; }
     .testi-cards {
       max-width: 1080px;
       margin: 0 auto;
@@ -356,7 +385,6 @@
       justify-content: space-between;
     }
     .t-card blockquote {
-      font-family: 'IBM Plex Sans', sans-serif;
       font-size: 15px;
       font-style: normal;
       line-height: 1.6;
@@ -367,46 +395,7 @@
     .t-card cite { font-style: normal; font-weight: 500; font-size: 13px; color: var(--white); }
     .t-card cite span { display: block; font-size: 12px; color: var(--dim); font-weight: 400; margin-top: 2px; }
 
-    /* ── ⑧ SERVICES ── */
-    .services { padding: 64px 48px; }
-    .services-header { text-align: center; margin-bottom: 32px; }
-    .services-header h2 {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 28px;
-      font-weight: 400;
-    }
-    .services-header h2 em { color: var(--accent-text); font-style: italic; font-weight: 300; }
-    .services-row {
-      max-width: 1080px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-    .s-card { padding: 32px 26px; }
-    .s-card-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      margin-bottom: 28px;
-      background: var(--accent-soft);
-      border: 1px solid rgba(168,184,204,0.12);
-    }
-
-    .s-card h3 {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-    .s-card p { font-size: 14px; color: var(--mist); line-height: 1.7; margin-bottom: 14px; }
-    .s-card .detail { font-size: 12px; color: var(--accent-text); font-weight: 500; }
-
-    /* ── ⑨ ABOUT ── */
+    /* ── ABOUT ── */
     .about { padding: 64px 48px; }
     .about-inner {
       max-width: 1080px;
@@ -433,16 +422,16 @@
       overflow: hidden;
     }
     .about-text h2 {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: 'Fraunces', Georgia, serif;
       font-size: 32px;
       font-weight: 400;
       margin-bottom: 4px;
     }
     .about-text .subtitle {
       font-size: 14px;
-      color: var(--accent-text);
+      color: var(--accent);
       margin-bottom: 20px;
-      font-weight: 400;
+      font-weight: 500;
     }
     .about-text p {
       color: var(--mist);
@@ -450,21 +439,20 @@
       margin-bottom: 14px;
       font-size: 14.5px;
     }
-    .about-text p strong { color: var(--white); font-weight: 500; }
 
-    /* ── ⑩ FAQ ── */
+    /* ── FAQ ── */
     .faq { padding: 64px 48px; }
     .faq-inner { max-width: 720px; margin: 0 auto; }
     .faq-header { text-align: center; margin-bottom: 32px; }
     .faq-header h2 {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: 'Fraunces', Georgia, serif;
       font-size: 28px;
       font-weight: 400;
     }
     .faq-item { border-top: 1px solid var(--glass-border-light); padding: 20px 0; }
     .faq-item:last-child { border-bottom: 1px solid var(--glass-border-light); }
     .faq-q {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: 'Fraunces', Georgia, serif;
       font-size: 16px;
       font-weight: 500;
       cursor: pointer;
@@ -492,19 +480,19 @@
       transition: max-height 0.35s ease, padding 0.35s ease;
       padding-top: 0;
     }
-    .faq-item.open .faq-a { max-height: 200px; padding-top: 10px; }
+    .faq-item.open .faq-a { max-height: 300px; padding-top: 10px; }
 
-    /* ── ⑪ CONTACT ── */
+    /* ── CONTACT ── */
     .contact { padding: 64px 48px; text-align: center; }
     .contact .section-inner { max-width: 640px; }
     .contact h2 {
-      font-family: 'IBM Plex Serif', serif;
+      font-family: 'Fraunces', Georgia, serif;
       font-size: clamp(26px, 2.8vw, 34px);
       font-weight: 400;
       margin-bottom: 14px;
       line-height: 1.3;
+      text-wrap: balance;
     }
-    .contact h2 em { color: var(--accent-text); font-style: italic; font-weight: 300; }
     .contact > .section-inner > p {
       font-size: 15px;
       color: var(--mist);
@@ -517,8 +505,44 @@
       justify-content: center;
       align-items: center;
     }
+    .contact-email {
+      margin-top: 14px;
+      font-size: 14px;
+    }
+    .contact-email a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact-email a:hover { text-decoration: underline; }
 
-    /* ── ⑫ FOOTER ── */
+    /* ── KIT FORM DARK THEME ── */
+    .formkit-form {
+      border-radius: 14px !important;
+      overflow: hidden;
+    }
+    .formkit-form [data-style="clean"] {
+      background: var(--glass) !important;
+      border: 1px solid var(--glass-border) !important;
+      backdrop-filter: blur(20px) saturate(1.2) !important;
+      -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
+    }
+    .formkit-input {
+      background: rgba(255,255,255,0.06) !important;
+      border: 1px solid var(--glass-border) !important;
+      color: var(--white) !important;
+      border-radius: 6px !important;
+    }
+    .formkit-input::placeholder { color: var(--dim) !important; opacity: 0.6 !important; }
+    .formkit-submit {
+      background: var(--accent) !important;
+      color: var(--night) !important;
+      border-radius: 6px !important;
+      font-weight: 500 !important;
+    }
+    .formkit-submit:hover { background: var(--accent-hover) !important; }
+    .formkit-powered-by-convertkit-container { visibility: hidden; }
+
+    /* ── FOOTER ── */
     footer {
       padding: 32px 48px;
       border-top: 1px solid var(--glass-border-light);
@@ -533,140 +557,19 @@
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
-    /* ── ASSESSMENT MODAL ── */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(6,10,30,0.8);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      z-index: 500;
-      justify-content: center;
-      align-items: center;
-      padding: 24px;
-    }
-    .modal-overlay.active { display: flex; }
-    .modal {
-      background: #141832;
-      border: 1px solid var(--glass-border);
-      border-radius: 16px;
-      max-width: 560px;
-      width: 100%;
-      max-height: 90vh;
-      overflow-y: auto;
-      padding: 40px 36px;
-      position: relative;
-    }
-    .modal-close {
-      position: absolute;
-      top: 16px;
-      right: 20px;
-      background: none;
-      border: none;
-      color: var(--dim);
-      font-size: 24px;
-      cursor: pointer;
-      line-height: 1;
-      transition: color 0.2s;
-    }
-    .modal-close:hover { color: var(--white); }
-    .modal h3 {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 22px;
-      font-weight: 400;
-      margin-bottom: 8px;
-    }
-    .modal .modal-intro {
-      font-size: 13px;
-      color: var(--dim);
-      margin-bottom: 28px;
-      line-height: 1.6;
-    }
-    .assess-item {
-      margin-bottom: 24px;
-    }
-    .assess-item label {
-      display: block;
-      font-size: 14px;
-      color: var(--white);
-      margin-bottom: 10px;
-      line-height: 1.5;
-    }
-    .assess-item label strong {
-      color: var(--accent-text);
-    }
-    .score-btns {
-      display: flex;
-      gap: 8px;
-    }
-    .score-btn {
-      width: 44px;
-      height: 38px;
-      border: 1px solid var(--glass-border);
-      border-radius: 6px;
-      background: transparent;
-      color: var(--dim);
-      font-size: 14px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-      font-family: 'IBM Plex Sans', sans-serif;
-    }
-    .score-btn:hover { border-color: var(--accent); color: var(--white); }
-    .score-btn.selected {
-      background: var(--accent);
-      color: var(--night);
-      border-color: var(--accent);
-    }
-    .assess-result {
-      display: none;
-      margin-top: 28px;
-      padding-top: 24px;
-      border-top: 1px solid var(--glass-border-light);
-    }
-    .assess-result.visible { display: block; }
-    .assess-total {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 36px;
-      font-weight: 300;
-      color: var(--accent-text);
-      margin-bottom: 4px;
-    }
-    .assess-total span { font-size: 18px; color: var(--dim); }
-    .assess-verdict {
-      font-size: 15px;
-      color: var(--white);
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-    .assess-advice {
-      font-size: 13px;
-      color: var(--mist);
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .assess-steps {
-      font-size: 13px;
-      color: var(--dim);
-      line-height: 1.7;
-    }
-    .assess-steps strong { color: var(--accent-text); }
-
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      .opt-in { padding: 10px 24px; }
       nav { padding: 16px 24px; }
       .hero { padding: 56px 24px 48px; }
-      .numbers { padding: 32px 24px; }
-      .numbers-inner { grid-template-columns: repeat(2, 1fr); gap: 20px; }
       .logos-section { padding: 28px 24px; }
-      .problem { padding: 48px 24px; }
-      .problem .section-inner { grid-template-columns: 1fr; }
+      .problem-section { padding: 48px 24px; }
+      .situations { padding: 36px 24px 48px; }
+      .situations-grid { grid-template-columns: 1fr; }
+      .how-section { padding: 48px 24px; }
+      .pricing { padding: 48px 24px; }
+      .pricing-grid { grid-template-columns: 1fr; }
       .testi { padding: 48px 24px; }
       .testi-cards { grid-template-columns: 1fr; }
-      .services { padding: 48px 24px; }
-      .services-row { grid-template-columns: 1fr; }
       .about { padding: 48px 24px; }
       .about-inner { grid-template-columns: 1fr; gap: 32px; }
       .about-photo { max-width: 240px; }
@@ -674,13 +577,10 @@
       .contact { padding: 48px 24px; }
       .contact-btns { flex-direction: column; }
       footer { flex-direction: column; gap: 10px; text-align: center; padding: 28px 24px; }
-      .modal { padding: 32px 24px; }
     }
     @media (max-width: 600px) {
       nav ul a:not(.btn) { display: none; }
-      .numbers-inner { grid-template-columns: 1fr; }
       .logos-row { gap: 24px; }
-      .hero-btns { flex-direction: column; }
     }
   </style>
 </head>
@@ -688,37 +588,29 @@
 
   <div class="page-content">
 
-    <!-- ① OPT-IN BAR -->
-    <div class="opt-in">
-      <a href="#" onclick="document.getElementById('assessModal').classList.add('active'); return false;">Take the Assessment: Could you benefit from the 12-Week Constellation Build? →</a>
-    </div>
-
-    <!-- ② NAV -->
+    <!-- NAV -->
     <nav>
       <a href="/" class="nav-logo">Cosmos Research</a>
       <ul>
-        <li><a href="#problem">The Constellation Build</a></li>
-        <li><a href="#services">Continue Together</a></li>
-        <li><a href="#about">Who I Am</a></li>
-        <li><a href="#testimonials">What Clients Say</a></li>
+        <li><a href="#how">How I Help</a></li>
+        <li><a href="#pricing">Ways to Work Together</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="https://calendly.com/andrea-cosmosresearch/free-strategy-session?background_color=141832&text_color=eeeae3&primary_color=a8b8cc" target="_blank" rel="noopener" class="btn btn-accent">Book a Call</a></li>
+        <li><a href="https://calendar.notion.so/meet/cosmosresearch/30-min-conversation" target="_blank" rel="noopener" class="btn btn-accent">Schedule a Conversation</a></li>
       </ul>
     </nav>
 
-    <!-- ③ HERO -->
+    <!-- HERO -->
     <header class="hero">
       <div class="section-inner">
-        <p class="hero-label">Product Strategy Advisor</p>
-        <h1>Your product is a <em>constellation</em></h1>
-        <p class="hero-sub">Apply capital allocation rigor to SaaS product decisions and prove every investment is justified.</p>
-        <div class="hero-btns">
-          <a href="https://calendly.com/andrea-cosmosresearch/free-strategy-session?background_color=141832&text_color=eeeae3&primary_color=a8b8cc" target="_blank" rel="noopener" class="btn btn-accent">Book a Call</a>
-        </div>
+        <div class="tag">Product Strategy Advisor · Value Creation</div>
+        <h1>When the plan isn't delivering, let's find out why.</h1>
+        <p class="hero-sub">Your team has been working on it. Retention, growth, a product investment that should be paying off. I come in as outside eyes to investigate what's happening and help you decide where to focus next.</p>
+        <a href="https://calendar.notion.so/meet/cosmosresearch/30-min-conversation" target="_blank" rel="noopener" class="btn btn-accent">Let's talk</a>
       </div>
     </header>
 
-    <!-- ④ LOGO RIBBON -->
+    <!-- LOGO RIBBON -->
     <section class="logos-section glass-band">
       <p>Worked with</p>
       <div class="logos-row">
@@ -728,98 +620,88 @@
         <div class="logo-item"><img src="assets/google.png" alt="Google" height="44"></div>
         <div class="logo-item"><img src="assets/henry-schein-one.svg" alt="Henry Schein ONE" height="44"></div>
         <div class="logo-item"><img src="assets/the-orchard.svg" alt="The Orchard" height="44"></div>
-    </div>
-    </section>
-
-    <!-- ⑤ NUMBERS -->
-    <section class="numbers">
-      <div class="numbers-inner">
-        <div>
-          <div class="num-val">$15M+</div>
-          <div class="num-label">development costs saved</div>
-        </div>
-        <div>
-          <div class="num-val">600K+</div>
-          <div class="num-label">data points analyzed</div>
-        </div>
-        <div>
-          <div class="num-val">52</div>
-          <div class="num-label">products supported</div>
-        </div>
-        <div>
-          <div class="num-val">80+</div>
-          <div class="num-label">PMs &amp; designers mentored</div>
-        </div>
       </div>
     </section>
 
-    <!-- ⑥ PROBLEM → SOLUTION -->
-    <section class="problem" id="problem">
+    <!-- THE PROBLEM -->
+    <section class="problem-section" id="how">
+      <div class="section-narrow">
+        <h2>The problem might not be the one you thought.</h2>
+        <p>A team can spend months trying to move a metric, retain customers, or deliver a product improvement without getting the result the business expected.</p>
+        <p>I examine the product, the customers, and the assumptions connecting the plan to its intended result, then help leadership decide <strong>what to change, where to invest, and what not to keep spending time and money on.</strong></p>
+      </div>
+    </section>
+
+    <!-- COMMON SITUATIONS -->
+    <section class="situations">
       <div class="section-inner">
-        <div class="services-header">
-          <h2>THE <em>CONSTELLATION</em> BUILD</h2>
-          <p class="hero-sub">Over 12 weeks, we map the patterns driving your product decisions and build a system that applies the same rigor to product decisions as you do to financial capital. Your team makes decisions that justify every dollar invested and fully owns the system.</p>
+        <div style="text-align: center; margin-bottom: 28px;">
+          <p class="section-label">Common situations</p>
         </div>
-        <div class="glass-card prob-card pain">
-          <h3>What you're experiencing</h3>
-          <ul>
-            <li>Product capital is being allocated without defensible ROI projections. When you're asked to justify product spend—whether by the board, investors, or your finance team—you don't have the data to back it up.</li>
-            <li>Features get prioritized based on stakeholder pressure, competitive reaction, or assumptions. Budget is allocated without proof of return. You're building constantly, but ROI isn't clear.</li>
-            <li>Without a system to track ROI from decision to delivery, you can't connect product investments to revenue growth.</li>
-          </ul>
+        <div class="situations-grid">
+          <article class="glass-card sit-card">
+            <h3>Retention is slipping.</h3>
+            <p>Customers are leaving, and the team has tried to address it, but retention still isn't moving. I investigate what's changing for customers, what the company has already tried, and where product or customer issues may be contributing.</p>
+          </article>
+          <article class="glass-card sit-card">
+            <h3>Growth isn't meeting the plan.</h3>
+            <p>The business is investing in its product, but growth isn't following. I examine the assumptions connecting those investments to the result you expect, including what customers need, use, and are willing to pay for.</p>
+          </article>
+          <article class="glass-card sit-card">
+            <h3>A product investment is on the table.</h3>
+            <p>A build or major change is being considered, but leadership needs to know whether it addresses the right problem. I assess the customer need, the evidence behind the proposed investment, and the alternatives before more resources are committed.</p>
+          </article>
         </div>
-        <div class="glass-card prob-card gain">
-          <h3>What you'll receive</h3>
-          <ul>
-            <li>Pattern Map showing where capital is being wasted and what's driving your product decisions.</li>
-            <li>Prioritization Framework (Cost Per Customer system) so you know what's worth building.</li>
-            <li>Evaluation Protocols (30/60/90 tracking) to prove returns post-launch.</li>
-            <li>Complete roadmap with financial projections for every priority—defensible at the board level.</li>
-            <li>Team training so your team owns the system going forward.</li>
-          </ul>
-        </div>
+        <p class="situations-note">These are starting points. Every investigation begins with the specific question your team is facing.</p>
       </div>
     </section>
 
-    <!-- ⑦ SERVICES -->
-    <section class="services" id="services">
-      <div class="services-header">
-        <h2>CONTINUE <em>TOGETHER</em></h2>
-        <p class="hero-sub">The 12-week build gives you the system. If you want ongoing support to keep it calibrated, here's how we can continue.</p>
+    <!-- HOW I WORK -->
+    <section class="how-section">
+      <div class="section-narrow">
+        <h2>How I work</h2>
+        <p>I can come in once there's a clear concern, or earlier, when the team needs help deciding what to investigate.</p>
+        <p class="how-questions">The questions I'm asking: What does the business need to achieve? What do customers actually depend on? What has the team already tried? And what evidence connects the proposed work to the result everyone is working toward?</p>
+        <p>Depending on the question, that may mean reviewing available product and customer data, speaking with team members and customers, examining the reasoning behind a plan, and modeling potential business outcomes. You'll leave with a clearer view of what the evidence supports, what remains uncertain, and what leadership can do next.</p>
+        <p>I take on the investigation without putting the full burden on an already stretched team.</p>
       </div>
-      <div class="services-row">
-        <article class="glass-card s-card">
-          <h3>Stay Calibrated</h3>
-          <p>Ongoing calls and async support to gut-check decisions, navigate tricky situations, and keep your prioritization system working as your product evolves. Available when you need it, not on a rigid schedule.</p>
+    </section>
+
+    <!-- WAYS TO WORK TOGETHER -->
+    <section class="pricing" id="pricing">
+      <div class="pricing-header">
+        <h2>Ways to work together</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="glass-card price-card">
+          <h3>Working session</h3>
+          <div class="price-meta">90 minutes · $750–$1,500</div>
+          <p>Bring a product or growth question, what you've tried, and the decision you're facing. We'll talk through the situation, examine the assumptions, and identify possible next steps.</p>
         </article>
-        <article class="glass-card s-card">
-          <h3>Navigate Together</h3>
-          <p>Ongoing product strategy support for teams who've completed the 12-Week Constellation Build and want continued partnership. I work with your team to ensure the system stays calibrated, roadmap decisions remain defensible, and every investment continues to justify the capital.</p>
+        <article class="glass-card price-card">
+          <h3>Focused investigation</h3>
+          <div class="price-meta">4 weeks · $12,500–$15,000</div>
+          <p>For one defined business problem. I investigate using the available evidence and conversations with the people closest to it. Leadership receives findings, remaining uncertainties, and a recommended direction for the decision ahead.</p>
+        </article>
+        <article class="glass-card price-card">
+          <h3>Investigation and follow-through</h3>
+          <div class="price-meta">Up to 12 weeks · $30,000–$45,000</div>
+          <p>For a problem that needs deeper investigation and continued support. I work with leadership and the team to establish a direction, then continue advising as they make decisions and act on the findings.</p>
         </article>
       </div>
-    </section>
-
-    <!-- ⑧ ABOUT -->
-    <section class="about" id="about">
-      <div class="about-inner">
-        <div class="about-photo"><img src="assets/andrea-stella.png" alt="Andréa Stella, Product Strategy Advisor" style="width:100%; height:100%; object-fit:cover;"></div>
-        <div class="about-text">
-          <h2>Andréa Stella</h2>
-          <p class="subtitle">Product Strategy Advisor</p>
-          <p>I'm your SaaS product strategy advisor working behind the scenes to make your product strategy budget defensible for your stakeholders. I partner with product leaders at every level of organization, from pre-seed startups to Fortune 500 companies.</p>
-          <p>I use my PhD training to craft rigorous product strategy, but leave the academic ego at the door. As a neurodivergent thinker, I find the patterns most people miss because I see how everything connects. I think in constellations, not isolated problems.</p>
-          <p>The system I build for you is designed to track ROI at every stage of your product's lifecycle, from prioritization through post-launch evaluation. It works because it's grounded in your existing data. I'll ask why until we get to the foundation of your strategy, then build a framework that makes every product decision defensible at the board level.</p>
-          <p>This system works for all product teams because we're using equations and data to solve complex questions. We'll also train your team to own the work and sustain the system for the future.</p>
-        </div>
+      <p class="pricing-note">Scope and fee depend on the work.</p>
+      <div class="pricing-cta">
+        <a href="https://calendar.notion.so/meet/cosmosresearch/30-min-conversation" target="_blank" rel="noopener" class="btn btn-accent">Talk about your situation</a>
       </div>
     </section>
 
-    <!-- ⑨ TESTIMONIALS -->
+    <!-- TESTIMONIALS -->
     <section class="testi" id="testimonials">
-      <div class="testi-header">
-        <h2>WHAT CLIENTS SAY</h2>
-      </div>
       <div class="testi-cards">
+        <article class="glass-card t-card">
+          <blockquote>"She walks into a room of conflicting priorities and leaves everyone aligned. She listens before she leads — that's why people trust&nbsp;her."</blockquote>
+          <cite>Product Co-Owner<span>Government Technology Platform</span></cite>
+        </article>
         <article class="glass-card t-card">
           <blockquote>"We were about to spend six figures building features nobody needed. Andréa showed us the answers were already in our support data — and saved us the entire budget."</blockquote>
           <cite>VP of Product<span>Enterprise Healthcare SaaS</span></cite>
@@ -829,17 +711,26 @@
           <cite>Head of Design<span>B2B Music Technology</span></cite>
         </article>
         <article class="glass-card t-card">
-          <blockquote>"She walks into a room of conflicting priorities and leaves everyone aligned. She listens before she leads — that's why people trust&nbsp;her."</blockquote>
-          <cite>Director of Engineering<span>Government Technology Platform</span></cite>
-        </article>
-        <article class="glass-card t-card">
           <blockquote>"Andréa gets it before you even know what you need. I came to her with a jumbled brain dump, and she translated my word vomit into the right solution — a prioritization system I now use constantly. She thinks clearly when you can't."</blockquote>
           <cite>Founder<span>Health Tech</span></cite>
         </article>
       </div>
     </section>
 
-    <!-- ⑩ FAQ -->
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-photo"><img src="assets/andrea-stella.png" alt="Andréa Stella, Product Strategy Advisor" style="width:100%; height:100%; object-fit:cover;"></div>
+        <div class="about-text">
+          <h2>Andréa Stella</h2>
+          <p class="subtitle">Product Strategy Advisor · Value Creation</p>
+          <p>My background spans research and product strategy, from pre-seed companies to Fortune 100 organizations. I've worked across more than 50 products, investigating everything from retention problems to product investments that weren't paying off.</p>
+          <p>I bring outside perspective and hands-on investigation, working with teams to find a useful direction forward.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="faq-inner">
         <div class="faq-header">
@@ -847,54 +738,48 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How does the 12-Week Constellation Build work?</div>
-          <div class="faq-a">We map the patterns driving your product decisions through data analysis, team conversations, and customer feedback. Then we build a system that applies financial rigor to every product investment using Cost Per Customer Impacted. By week 12, your team makes investment decisions that justify the capital and owns the system independently.</div>
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">When should I bring you in?</div>
+          <div class="faq-a">When a business result matters, but the path to improving it isn't clear. You may already know there's a retention, growth, or product issue, or you may have a concern and need help figuring out what's worth investigating.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Who is this for?</div>
-          <div class="faq-a"><p>This is for CPOs and VPs of Product at PE-backed SaaS companies ($30M-$50M ARR), and Operating Partners at PE/VC firms deploying advisors into portfolio companies.</p><p>The system applies financial rigor to product capital allocation, makes every investment decision defensible with data, and connects product decisions directly to revenue growth.</p></div>
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if we're not sure there's a problem yet?</div>
+          <div class="faq-a">That's a fine time to reach out. I can come in when a concern is emerging, not just after it's obvious. Sometimes the investigation is figuring out whether there's something to investigate.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What makes your system different?</div>
-          <div class="faq-a"><p>Most product teams have data but no system to turn it into defensible capital allocation decisions.</p><p>The system I build does three things:</p>
-                             <p><b>Makes every decision measurable.</b> Cost Per Customer Impacted (Cost to build ÷ customers impacted) becomes the baseline for every product investment.</p>
-                             <p><b>Reveals what's driving decisions.</b> Pattern mapping shows organizational, team, and product patterns so you address root causes instead of symptoms.</p>
-                             <p><b>Tracks returns post-launch.</b> Evaluation protocols at 30/60/90 days prove which investments delivered and which didn't.</p>
-                             <p>Your team learns to run the system independently—applying the same financial rigor to product capital as you do everywhere else.</p>
-          </div>
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What do you need to get started?</div>
+          <div class="faq-a">A defined question or concern, access to relevant information, and time with the people closest to the problem. We'll agree on the scope and access needed before the engagement begins. The initial conversation is separate from the paid working session.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What do I need to have in place before we start?</div>
-          <div class="faq-a">Access to your product data, support tickets, and key team members for conversations. You don't need a huge team or perfect documentation. I work with what's already there and help you see what matters.</div>
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you only work with product teams?</div>
+          <div class="faq-a">No. I work with leadership and the teams connected to the question: product, engineering, customer-facing teams, and others involved in the business decision.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do we get started?</div>
-          <div class="faq-a">Book a free 30-minute call. We'll talk about what's not working, what you've tried, and whether the 12-Week Constellation Build is the right fit. You'll walk away with at least one clear insight, whether we work together or not.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can we continue working together after the 12 weeks?</div>
-          <div class="faq-a">Yes. Some clients continue with Stay Calibrated (ongoing calls and async support) or Navigate Together (fractional product leadership). We can figure out what makes sense for you once the 12-week build is complete.</div>
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Will you stay involved after the investigation?</div>
+          <div class="faq-a">When that's part of the engagement. The longer engagement includes continued advising as the team works through the findings and decides how to act.</div>
         </div>
       </div>
     </section>
 
-    <!-- ⑪ CONTACT -->
+    <!-- CONTACT -->
     <section class="contact" id="connect">
       <div class="section-inner">
-        <h2>If this sounds like something you need, <em>let's connect!</em></h2>
-        <p>Book a free 30-minute call.</p>
+        <h2>Let's talk about what's not moving.</h2>
+        <p>You don't need to have the problem perfectly defined before reaching out.</p>
         <div class="contact-btns">
-          <a href="https://calendly.com/andrea-cosmosresearch/free-strategy-session?background_color=141832&text_color=eeeae3&primary_color=a8b8cc" target="_blank" rel="noopener" class="btn btn-accent">Book a Call</a>
+          <a href="https://calendar.notion.so/meet/cosmosresearch/30-min-conversation" target="_blank" rel="noopener" class="btn btn-accent">Schedule a conversation</a>
         </div>
-        
-        <!-- Kit email form --> 
-        <div style="margin-top: 32px;"> 
-          <script async data-uid="549dc91945" src="https://cosmos-research.kit.com/549dc91945/index.js"></script> 
+        <div class="contact-email">
+          <a href="mailto:andrea@cosmosresearch.io">andrea@cosmosresearch.io</a>
+        </div>
+
+        <!-- Kit email form -->
+        <div style="margin-top: 32px;">
+          <script async data-uid="549dc91945" src="https://cosmos-research.kit.com/549dc91945/index.js"></script>
         </div>
       </div>
     </section>
 
-    <!-- ⑫ FOOTER -->
+    <!-- FOOTER -->
     <footer>
       <span>&copy; 2026 Cosmos Research</span>
       <span><a href="mailto:andrea@cosmosresearch.io">andrea@cosmosresearch.io</a></span>
