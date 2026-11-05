@@ -189,7 +189,7 @@
     nav .btn { font-size: 13px; padding: 9px 20px; }
 
     /* ── HERO ── */
-    .hero { padding: 80px 48px 64px; text-align: center; }
+    .hero { padding: 100px 48px 80px; text-align: center; }
     .hero .section-inner { max-width: 760px; }
     .hero h1 {
       font-family: 'Fraunces', Georgia, serif;
@@ -243,7 +243,7 @@
     }
 
     /* ── PROBLEM SECTION ── */
-    .problem-section { padding: 64px 48px; }
+    .problem-section { padding: 80px 48px; }
     .problem-section .section-narrow { max-width: 680px; }
     .problem-section h2 {
       font-family: 'Fraunces', Georgia, serif;
@@ -265,7 +265,7 @@
     }
 
     /* ── SITUATIONS ── */
-    .situations { padding: 48px 48px 64px; }
+    .situations { padding: 20px 48px 80px; }
     .situations-grid {
       max-width: 1080px;
       margin: 0 auto;
@@ -296,7 +296,7 @@
     }
 
     /* ── HOW I WORK ── */
-    .how-section { padding: 64px 48px; }
+    .how-section { padding: 80px 48px; }
     .how-section .section-narrow { max-width: 680px; }
     .how-section h2 {
       font-family: 'Fraunces', Georgia, serif;
@@ -319,11 +319,15 @@
       font-style: italic;
       color: var(--accent-text);
       line-height: 1.7;
-      margin-bottom: 16px;
+      margin: 8px 0 20px;
+      padding: 20px 24px;
+      border-left: 2px solid var(--glass-border);
+      background: var(--accent-soft);
+      border-radius: 0 8px 8px 0;
     }
 
     /* ── PRICING ── */
-    .pricing { padding: 64px 48px; }
+    .pricing { padding: 80px 48px; }
     .pricing-header { text-align: center; margin-bottom: 32px; }
     .pricing-header h2 {
       font-family: 'Fraunces', Georgia, serif;
@@ -360,17 +364,17 @@
     }
     .pricing-note {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 28px;
       font-size: 14px;
       color: var(--dim);
     }
     .pricing-cta {
       text-align: center;
-      margin-top: 28px;
+      margin-top: 20px;
     }
 
     /* ── TESTIMONIALS ── */
-    .testi { padding: 64px 48px; }
+    .testi { padding: 80px 48px; }
     .testi-cards {
       max-width: 1080px;
       margin: 0 auto;
@@ -396,7 +400,7 @@
     .t-card cite span { display: block; font-size: 12px; color: var(--dim); font-weight: 400; margin-top: 2px; }
 
     /* ── ABOUT ── */
-    .about { padding: 64px 48px; }
+    .about { padding: 80px 48px; }
     .about-inner {
       max-width: 1080px;
       margin: 0 auto;
@@ -441,7 +445,7 @@
     }
 
     /* ── FAQ ── */
-    .faq { padding: 64px 48px; }
+    .faq { padding: 80px 48px; }
     .faq-inner { max-width: 720px; margin: 0 auto; }
     .faq-header { text-align: center; margin-bottom: 32px; }
     .faq-header h2 {
@@ -483,7 +487,7 @@
     .faq-item.open .faq-a { max-height: 300px; padding-top: 10px; }
 
     /* ── CONTACT ── */
-    .contact { padding: 64px 48px; text-align: center; }
+    .contact { padding: 80px 48px; text-align: center; }
     .contact .section-inner { max-width: 640px; }
     .contact h2 {
       font-family: 'Fraunces', Georgia, serif;
@@ -559,6 +563,7 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
+      body { background-position: 30% center; }
       nav { padding: 16px 24px; }
       .hero { padding: 56px 24px 48px; }
       .logos-section { padding: 28px 24px; }
@@ -697,6 +702,9 @@
 
     <!-- TESTIMONIALS -->
     <section class="testi" id="testimonials">
+      <div style="text-align: center; margin-bottom: 32px; max-width: 1080px; margin-left: auto; margin-right: auto;">
+        <p class="section-label">What people say</p>
+      </div>
       <div class="testi-cards">
         <article class="glass-card t-card">
           <blockquote>"She walks into a room of conflicting priorities and leaves everyone aligned. She listens before she leads — that's why people trust&nbsp;her."</blockquote>
